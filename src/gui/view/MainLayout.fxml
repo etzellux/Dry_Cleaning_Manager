@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="mainLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.view.MainLayoutController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: dcf0fa;" BorderPane.alignment="CENTER">
+        <items>
+          <Button mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: FAF6F2;" text="Back">
+               <effect>
+                  <Blend />
+               </effect></Button>
+            <Pane prefHeight="30.0" prefWidth="443.0" />
+            <Button mnemonicParsing="false" onAction="#loadMainPage" style="-fx-background-color: FAF6F2;" text="Home" />
+            <Button mnemonicParsing="false" onAction="#loadClientsPage" style="-fx-background-color: FAF6F2;" text="Clients" />
+            <Button mnemonicParsing="false" onAction="#loadPaymentHistoryPage" style="-fx-background-color: FAF6F2;" text="Payment History" />
+            <Button mnemonicParsing="false" onAction="#loadEmployeesPage" style="-fx-background-color: FAF6F2;" text="Employees" />
+        </items>
+      </ToolBar>
+   </top>
+</BorderPane>
